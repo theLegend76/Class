@@ -1,0 +1,42 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Player {
+public:
+   string name;
+   int jerseyNumber;
+   string position;
+   
+   void  setData(string playerName,  int jersey,  string pos) {
+      name = playerName;
+      jerseyNumber = jersey;
+      position = pos;
+   }
+   
+   void displayData() {
+      cout << "\nPlayer Name: " << name << endl;
+      cout << "Jersey Number: " << jerseyNumber << endl;
+      cout << "Position: " << position << endl;
+   }
+};
+
+int main() {
+      
+Player Mainplayer, Subplayer;
+
+Mainplayer.setData("Agoth Bol", 10, "Striker");
+Subplayer.setData("Lual Deng", 8, "Midfielder");
+
+cout << "----Mainplayer Details----";
+Mainplayer.displayData();
+
+cout << "\n----Subplayer Details----";
+Subplayer.displayData();
+
+return 0;
+}
+      
+   
+      
+      
